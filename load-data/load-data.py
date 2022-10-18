@@ -11,11 +11,11 @@ print(PATH)
 #LOC_TEST_CSV = 'https://s3.eu-gb.cloud-object-storage.appdomain.cloud/caine-mnist-dataset/mnist_test.csv'
 #LOC_MODEL = 'https://s3.us-east.cloud-object-storage.appdomain.cloud/caine-mnist-model/cities.csv'
 
-LOC_TRAIN_CSV = os.get('LOC_TRAIN_CSV')
-LOC_TEST_CSV = os.get('LOC_TEST_CSV')
-LOC_MODEL = os.get('LOC_MODEL')
+#LOC_TRAIN_CSV = os.getenv('LOC_TRAIN_CSV')
+#LOC_TEST_CSV = os.getenv('LOC_TEST_CSV')
+#LOC_MODEL = os.getenv('LOC_MODEL')
 
-COS_IAM_KEY = os.get('CLOUD_OBJECT_STORAGE_APIKEY')
+COS_IAM_KEY = os.getenv('CLOUD_OBJECT_STORAGE_APIKEY')
 print(COS_IAM_KEY)
 # -- Build the model
 # train_df: pd.DataFrame = pd.read_csv(LOC_TRAIN_CSV, header=None)
